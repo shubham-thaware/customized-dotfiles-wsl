@@ -2,7 +2,7 @@
 
 add_newline = true
 command_timeout = 1000
-format = """$os$username$hostname$kubernetes$directory$git_branch$git_status"""
+format = """$os$username$hostname$kubernetes$directory$git_branch$git_status$time"""
 
 # Drop ugly default prompt characters
 [character]
@@ -99,3 +99,10 @@ disabled = true
 
 [terraform]
 disabled = true
+
+# Shows live time with seconds
+[time]
+disabled = false
+format = '[ $time]($style) '
+time_format = "%I:%M:%S %p"  # 12-hour format with AM/PM
+style = "bold cyan"%
