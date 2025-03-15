@@ -1,0 +1,22 @@
+# Ignore SSH keys and credentials
+*.pem
+*.key
+*.crt
+*.env
+*.secrets
+id_rsa
+id_rsa.pub
+config
+
+# Ignore history and cache files
+.zsh_history
+.bash_history
+wget-hsts
+.vscode-server/
+.cache/
+.zcompdump*
+.zwc
+
+# Ignore WSL-specific files
+.wslconfig
+wsl2.conf
